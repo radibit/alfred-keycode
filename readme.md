@@ -14,7 +14,7 @@ $ npm install -g alfred-keycode
 
 ## Usage
 
-In Alfred, type `key`, <kbd>Enter</kbd>, and then press the requested key.
+In Alfred, type `kc`, <kbd>Enter</kbd>, and then press the requested key.
 
 For keys like <kbd>Backspace</kbd>, <kbd>Tab</kbd>, <kbd>Ctrl</kbd> etc. type their names.
 

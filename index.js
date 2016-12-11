@@ -256,23 +256,23 @@ const keyCodes = [
 	},
 	{
 		title: 106,
-		subtitle: '* / multiply'
+		subtitle: 'multiply'
 	},
 	{
 		title: 107,
-		subtitle: '+ / add'
+		subtitle: 'add'
 	},
 	{
 		title: 109,
-		subtitle: '- / subtract'
+		subtitle: 'subtract'
 	},
 	{
 		title: 110,
-		subtitle: '. / decimal point'
+		subtitle: '.'
 	},
 	{
 		title: 111,
-		subtitle: '/ / divide'
+		subtitle: 'divide'
 	},
 	{
 		title: 144,
@@ -348,4 +348,4 @@ const keyCodes = [
 	}
 ];
 
-alfy.output(alfy.matches(alfy.input, keyCodes, 'subtitle'));
+alfy.output(alfy.matches(alfy.input, keyCodes, (item, input) => item.subtitle === input));

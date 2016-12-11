@@ -3,16 +3,12 @@ import alfyTest from 'alfy-test';
 
 test(async t => {
 	const alfy = alfyTest();
-	const result = await alfy('-');
+	const result = await alfy('r');
 
 	t.deepEqual(result, [
 		{
-			title: 109,
-			subtitle: 'numpad -'
-		},
-		{
-			title: 189,
-			subtitle: '-'
+			title: 82,
+			subtitle: 'r'
 		}
 	]);
 });
