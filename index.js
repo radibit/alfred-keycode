@@ -1,348 +1,348 @@
-'use strict';
-
-const alfy = require('alfy');
+import alfy from 'alfy';
 
 const keyCodes = [
 	{
 		title: 8,
-		subtitle: 'backspace'
+		subtitle: 'backspace',
 	},
 	{
 		title: 9,
-		subtitle: 'tab'
+		subtitle: 'tab',
 	},
 	{
 		title: 13,
-		subtitle: 'enter'
+		subtitle: 'enter',
 	},
 	{
 		title: 16,
-		subtitle: 'shift'
+		subtitle: 'shift',
 	},
 	{
 		title: 17,
-		subtitle: 'ctrl'
+		subtitle: 'ctrl',
 	},
 	{
 		title: 18,
-		subtitle: 'alt'
+		subtitle: 'alt',
 	},
 	{
 		title: 19,
-		subtitle: 'pause/break'
+		subtitle: 'pause/break',
 	},
 	{
 		title: 20,
-		subtitle: 'caps lock'
+		subtitle: 'caps lock',
 	},
 	{
 		title: 27,
-		subtitle: 'esc'
+		subtitle: 'esc',
 	},
 	{
 		title: 32,
-		subtitle: 'space'
+		subtitle: 'space',
 	},
 	{
 		title: 33,
-		subtitle: 'page up'
+		subtitle: 'page up',
 	},
 	{
 		title: 34,
-		subtitle: 'page down'
+		subtitle: 'page down',
 	},
 	{
 		title: 35,
-		subtitle: 'end'
+		subtitle: 'end',
 	},
 	{
 		title: 36,
-		subtitle: 'home'
+		subtitle: 'home',
 	},
 	{
 		title: 37,
-		subtitle: 'left'
+		subtitle: 'left',
 	},
 	{
 		title: 38,
-		subtitle: 'up'
+		subtitle: 'up',
 	},
 	{
 		title: 39,
-		subtitle: 'right'
+		subtitle: 'right',
 	},
 	{
 		title: 40,
-		subtitle: 'down'
+		subtitle: 'down',
 	},
 	{
 		title: 45,
-		subtitle: 'insert'
+		subtitle: 'insert',
 	},
 	{
 		title: 46,
-		subtitle: 'delete'
+		subtitle: 'delete',
 	},
 	{
 		title: 48,
-		subtitle: '0'
+		subtitle: '0',
 	},
 	{
 		title: 49,
-		subtitle: '1'
+		subtitle: '1',
 	},
 	{
 		title: 50,
-		subtitle: '2'
+		subtitle: '2',
 	},
 	{
 		title: 51,
-		subtitle: '3'
+		subtitle: '3',
 	},
 	{
 		title: 52,
-		subtitle: '4'
+		subtitle: '4',
 	},
 	{
 		title: 53,
-		subtitle: '5'
+		subtitle: '5',
 	},
 	{
 		title: 54,
-		subtitle: '6'
+		subtitle: '6',
 	},
 	{
 		title: 55,
-		subtitle: '7'
+		subtitle: '7',
 	},
 	{
 		title: 56,
-		subtitle: '8'
+		subtitle: '8',
 	},
 	{
 		title: 57,
-		subtitle: '9'
+		subtitle: '9',
 	},
 	{
 		title: 58,
-		subtitle: ':'
+		subtitle: ':',
 	},
 	{
 		title: 60,
-		subtitle: '<'
+		subtitle: '<',
 	},
 	{
 		title: 63,
-		subtitle: 'ß'
+		subtitle: 'ß',
 	},
 	{
 		title: 65,
-		subtitle: 'a'
+		subtitle: 'a',
 	},
 	{
 		title: 66,
-		subtitle: 'b'
+		subtitle: 'b',
 	},
 	{
 		title: 67,
-		subtitle: 'c'
+		subtitle: 'c',
 	},
 	{
 		title: 68,
-		subtitle: 'd'
+		subtitle: 'd',
 	},
 	{
 		title: 69,
-		subtitle: 'e'
+		subtitle: 'e',
 	},
 	{
 		title: 70,
-		subtitle: 'f'
+		subtitle: 'f',
 	},
 	{
 		title: 71,
-		subtitle: 'g'
+		subtitle: 'g',
 	},
 	{
 		title: 72,
-		subtitle: 'h'
+		subtitle: 'h',
 	},
 	{
 		title: 73,
-		subtitle: 'i'
+		subtitle: 'i',
 	},
 	{
 		title: 74,
-		subtitle: 'j'
+		subtitle: 'j',
 	},
 	{
 		title: 75,
-		subtitle: 'k'
+		subtitle: 'k',
 	},
 	{
 		title: 76,
-		subtitle: 'l'
+		subtitle: 'l',
 	},
 	{
 		title: 77,
-		subtitle: 'm'
+		subtitle: 'm',
 	},
 	{
 		title: 78,
-		subtitle: 'n'
+		subtitle: 'n',
 	},
 	{
 		title: 79,
-		subtitle: 'o'
+		subtitle: 'o',
 	},
 	{
 		title: 80,
-		subtitle: 'p'
+		subtitle: 'p',
 	},
 	{
 		title: 81,
-		subtitle: 'q'
+		subtitle: 'q',
 	},
 	{
 		title: 82,
-		subtitle: 'r'
+		subtitle: 'r',
 	},
 	{
 		title: 83,
-		subtitle: 's'
+		subtitle: 's',
 	},
 	{
 		title: 84,
-		subtitle: 't'
+		subtitle: 't',
 	},
 	{
 		title: 85,
-		subtitle: 'u'
+		subtitle: 'u',
 	},
 	{
 		title: 86,
-		subtitle: 'v'
+		subtitle: 'v',
 	},
 	{
 		title: 87,
-		subtitle: 'w'
+		subtitle: 'w',
 	},
 	{
 		title: 88,
-		subtitle: 'x'
+		subtitle: 'x',
 	},
 	{
 		title: 89,
-		subtitle: 'y'
+		subtitle: 'y',
 	},
 	{
 		title: 90,
-		subtitle: 'z'
+		subtitle: 'z',
 	},
 	{
 		title: 91,
-		subtitle: 'cmd'
+		subtitle: 'cmd',
 	},
 	{
 		title: 91,
-		subtitle: 'left cmd'
+		subtitle: 'left cmd',
 	},
 	{
 		title: 93,
-		subtitle: 'right cmd'
+		subtitle: 'right cmd',
 	},
 	{
 		title: 106,
-		subtitle: 'multiply'
+		subtitle: 'multiply',
 	},
 	{
 		title: 107,
-		subtitle: 'add'
+		subtitle: 'add',
 	},
 	{
 		title: 109,
-		subtitle: 'subtract'
+		subtitle: 'subtract',
 	},
 	{
 		title: 110,
-		subtitle: '.'
+		subtitle: '.',
 	},
 	{
 		title: 111,
-		subtitle: 'divide'
+		subtitle: 'divide',
 	},
 	{
 		title: 144,
-		subtitle: 'num lock'
+		subtitle: 'num lock',
 	},
 	{
 		title: 145,
-		subtitle: 'scroll lock'
+		subtitle: 'scroll lock',
 	},
 	{
 		title: 160,
-		subtitle: '^'
+		subtitle: '^',
 	},
 	{
 		title: 161,
-		subtitle: '!'
+		subtitle: '!',
 	},
 	{
 		title: 163,
-		subtitle: '#'
+		subtitle: '#',
 	},
 	{
 		title: 164,
-		subtitle: '$'
+		subtitle: '$',
 	},
 	{
 		title: 165,
-		subtitle: 'ù'
+		subtitle: 'ù',
 	},
 	{
 		title: 186,
-		subtitle: ';'
+		subtitle: ';',
 	},
 	{
 		title: 187,
-		subtitle: '='
+		subtitle: '=',
 	},
 	{
 		title: 188,
-		subtitle: ','
+		subtitle: ',',
 	},
 	{
 		title: 189,
-		subtitle: '-'
+		subtitle: '-',
 	},
 	{
 		title: 190,
-		subtitle: '.'
+		subtitle: '.',
 	},
 	{
 		title: 191,
-		subtitle: '/'
+		subtitle: '/',
 	},
 	{
 		title: 192,
-		subtitle: '`'
+		subtitle: '`',
 	},
 	{
 		title: 219,
-		subtitle: '['
+		subtitle: '[',
 	},
 	{
 		title: 220,
-		subtitle: '\\'
+		subtitle: '\\',
 	},
 	{
 		title: 221,
-		subtitle: ']'
+		subtitle: ']',
 	},
 	{
 		title: 222,
-		subtitle: '\''
-	}
+		subtitle: '"',
+	},
 ];
 
-alfy.output(alfy.matches(alfy.input, keyCodes, (item, input) => item.subtitle === input));
+alfy.output(
+	alfy.matches(alfy.input, keyCodes, (item, input) => item.subtitle === input),
+);
