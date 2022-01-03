@@ -1,12 +1,13 @@
 {
   "name": "alfred-keycode",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Get JavaScript keycode",
   "license": "MIT",
   "repository": "radibit/alfred-keycode",
   "author": "Radimir Bitsov <radimir.bitsov@gmail.com>",
+  "type": "module",
   "engines": {
-    "node": ">=4"
+    "node": ">=14"
   },
   "scripts": {
     "test": "xo && ava",
@@ -24,15 +25,15 @@
     "keycode"
   ],
   "dependencies": {
-    "alfred-notifier": "^0.2.0",
-    "alfy": "^0.6.0"
+    "alfred-notifier": "^0.2.3",
+    "alfy": "^0.12.2"
   },
   "devDependencies": {
-    "alfy-test": "^0.3.0",
-    "ava": "^0.16.0",
-    "xo": "^0.17.0"
+    "alfy-test": "^0.4.2",
+    "ava": "^3.15.0",
+    "xo": "^0.47.0"
   },
   "xo": {
-    "esnext": true
+    "prettier": true
   }
 }
